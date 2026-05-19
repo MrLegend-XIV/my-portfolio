@@ -36,6 +36,11 @@ section {
   margin: 0 auto;
 }
 
+#about img {
+    height: 400px;
+    width: 400px;
+}
+
 h1 { font-size: 2.5rem; margin-bottom: 16px; }
 h2 { font-size: 1.8rem; margin-bottom: 24px; color: #2c3e50; }
 
@@ -65,4 +70,47 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 24px;
+}
+
+
+/* Card Layout ด้วย Flexbox */
+.cards-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive: มือถือ (หน้าจอ < 600px) */
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Tablet (600px - 900px) */
+@media (max-width: 900px) {
+  h1 { font-size: 1.8rem; }
+  section { padding: 40px 16px; }
 }
