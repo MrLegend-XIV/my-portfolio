@@ -1,0 +1,68 @@
+/* Reset พื้นฐาน */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #9f4cfe;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 24px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #d3ff12;
+}
+
+/* Section */
+section {
+  padding: 60px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 16px; }
+h2 { font-size: 1.8rem; margin-bottom: 24px; color: #2c3e50; }
+
+/* Skills list */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+ul li {
+  background: #3498db;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+#skills li:hover {
+    color: #fa0808;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #aaa;
+  text-align: center;
+  padding: 24px;
+}
