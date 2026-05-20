@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Profile</title>
   <link rel="stylesheet" href="style.css">
+  <script src="JSexam.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,22 @@
     <section id="about">
       <h1>สวัสดี ฉันชื่อ Thitivut J.</h1>
       <p>IT Support ที่กำลังเปลี่ยนสายมาเป็น Full Stack Developer</p>
-      <img src="./Chibi.JPG" alt="รูปของฉัน">
+      <img src="./Chibi.JPG" alt="รูปของฉัน"> <br>
+      <button onclick="changeColor()">Change BGColor</button>
+    </section>
+
+    <section>
+      <h2>Todo List</h2>
+      <input type="text" id="todoInput" placeholder="ใส่รายการที่ต้องทำ">
+      
+
+      <button class="todobutton" onclick="addItem()">เพิ่มรายการที่ต้องทำ</button>
+      <button class="todobutton" onclick="removeItem()">ลบรายการล่าสุด</button>
+      <button class="todobutton" onclick="displayItems()">แสดงรายการทั้งหมด</button>
+  
+      <div id="output"></div>
+
+
     </section>
 
     <section id="skills">

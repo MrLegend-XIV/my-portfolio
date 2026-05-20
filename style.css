@@ -11,6 +11,38 @@ body {
   line-height: 1.6;
 }
 
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #aefe4c;
+  background-color: #333;
+}
+
+.todobutton {
+  background-color: #eee;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.todobutton:hover {
+  color:#ffffff;
+  background-color:black;
+}
+
+#todoInput {
+  width: 290px;
+  height: 35px;
+}
+
 /* Header */
 header {
   background-color: #9f4cfe;
@@ -37,12 +69,20 @@ section {
 }
 
 #about img {
-    height: 400px;
-    width: 400px;
+  height: 400px;
+  width: 400px;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 16px; }
-h2 { font-size: 1.8rem; margin-bottom: 24px; color: #2c3e50; }
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
 
 /* Skills list */
 ul {
@@ -61,7 +101,7 @@ ul li {
 }
 
 #skills li:hover {
-    color: #fa0808;
+  color: #fa0808;
 }
 
 /* Footer */
@@ -88,7 +128,7 @@ footer {
   border-radius: 12px;
   padding: 24px;
   width: 280px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive: มือถือ (หน้าจอ < 600px) */
@@ -111,6 +151,11 @@ footer {
 
 /* Tablet (600px - 900px) */
 @media (max-width: 900px) {
-  h1 { font-size: 1.8rem; }
-  section { padding: 40px 16px; }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
 }
