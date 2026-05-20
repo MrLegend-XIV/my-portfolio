@@ -24,7 +24,7 @@ button:hover {
   background-color: #333;
 }
 
-.todobutton {
+.todobutton ,.searchBtn {
   background-color: #eee;
   padding: 10px 15px;
   font-size: 14px;
@@ -33,12 +33,12 @@ button:hover {
   border-radius: 5px;
 }
 
-.todobutton:hover {
+.todobutton:hover, .searchBtn:hover {
   color:#ffffff;
   background-color:black;
 }
 
-#todoInput {
+#todoInput, #cityInput {
   width: 290px;
   height: 35px;
 }
